@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Residence la cotiére</title>
+    <link rel="shortcut icon" href="images/logo.PNG" type="timages.PNG"/>
+<body>
+<header>
+    <a href="#" class="logo"><span>RESIDENCE </span>LA COTIERE</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="index.html" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="apropos.html" onclick="toggleMenu();">A propos</a></li>
+        <li><a href="noschambres.html" onclick="toggleMenu();">Voir les Tarifs</a></li>
+        <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+        <a href="tel:+2250705008000" class="btn-reserve"onclick="toggleMenu();">Reservation</a>
+    </ul>
+</header>
+
+   <section class="temoignage" id="temoignage">
+    <div class="titre blanc">
+        <h2 class="titre-texte">INFOR<span>MA</span>TION</h2>
+        <h2 class="titre-texte"><span>La nourriture et la boisons sont autorisé</span></h2>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/p6.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Possibilité d'envoyer de la nouriture au seins de la résidence.</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/S.PNG" alt="">
+            </div>
+            <div class="text">
+                <p>Possibilité d'envoyer de la boisson au seins de la résidence.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/po.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Possibilité d'envoyer de quoi a grignoté au seins de la résidence</p>
+            </div>
+        </div>
+    </div>
+ </section>
+ <section class="contact" id="contact">
+     <div class="titre noir">
+         <h2 class="titre-text"><span>C</span>ontact</h2>
+         <p>Pour plus d'informations veuillez nous contacter</p>
+         <p>Téléphone: +225 07 05 00 80 00</p>
+         <P>E-mail: residence.lacotiere@gmail.com</P>
+     </div>
+     <div class="contactform">
+         <h3>Envoyer nous un message</h3>
+         <div class="inputboite">
+             <input type="text" placeholder="Nom et Prénom">
+         </div>
+         <div class="inputboite">
+            <input type="text" placeholder="telephone">
+         </div>
+         <div class="inputboite">
+            <input type="text" placeholder="email">
+         </div>
+         <div class="inputboite">
+            <textarea placeholder="message"></textarea>
+         </div>
+         <div class="inputboite">
+             <input type="submit" value="envoyer">
+         </div>
+     </div>
+ </section>
+ <div class="copyright">
+     <p>copyright 2023 <a href="#">Sidibe oumar</a> .Tous droits reservé</p>
+ </div>
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
+</html>
